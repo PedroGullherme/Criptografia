@@ -1,0 +1,74 @@
+body {
+    background-image: url(./img/wallpaperbetter.jpg);
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+
+    background-color: #3d3f43db ;
+    padding: 95px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-radius: 2px;
+    width: auto;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    display: flex;
+    padding-bottom: 80px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.crip {
+    padding-bottom: 100px;
+}
+
+.textinho {
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    font-size: 100px;
+}
+
+#textinho {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+
+#Result {
+    color: white;
+    display: flex;
+    align-items: auto;
+    justify-content: auto;
+    padding: 25px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+button {
+    background: #454e54a1;
+	color: white;
+	border-style: outset;
+	border-color: #4a4d4f;
+    width: 70px;  
+    border-radius: 20px;
+	text-shadow: none;
+
+}
+
+#Res {
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size:25px;
+}

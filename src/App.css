@@ -1,0 +1,95 @@
+body {
+  background-image: url(./antigoArquivo/img/wallpaperbetter.jpg);
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden
+}
+
+.card {
+  background-color: #3d3f43db ;
+  padding: 200px;
+  padding-top: 1px;
+  padding-bottom: 100px;
+  border-radius: 2px;
+  width: auto;
+  height: auto;
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+  display: flex;
+  padding-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-right: 120px;
+}
+
+h3 {
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-family: 'Rubik Iso', cursive;
+}
+
+h4 {
+  color: rgb(255, 255, 255);
+  display: flex;
+  padding-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-family: 'Rubik Iso', cursive;
+}
+
+.textinho {
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  padding-right: 100px;
+}
+
+#textinho {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  padding-bottom: 20px;
+}
+
+#Result {
+  color: white;
+  display: flex;
+  align-items: auto;
+  justify-content: auto;
+  padding: 25px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+button {
+  display: inline-block;
+  padding: 1px 10px;
+  background-color: #4B4B4B;
+  margin-right: 0px;
+  margin-left: 10px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+#Res {
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size:25px;
+  margin: 0px 0px 0px 0px;
+}
