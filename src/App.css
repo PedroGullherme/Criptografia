@@ -5,17 +5,22 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .card {
-  background-color: #3d3f43db ;
+  background-color: #3d3f43db;
   padding: 200px;
   padding-top: 1px;
   padding-bottom: 100px;
-  border-radius: 2px;
+  border-radius: 10px;
   width: auto;
   height: auto;
+}
+
+.crip {
+  margin-right: 10px;
+  height: 40px;
 }
 
 h2 {
@@ -51,7 +56,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh; 
+  height: 100vh;
   padding-right: 100px;
 }
 
@@ -69,6 +74,66 @@ h4 {
   padding: 25px 0;
   font-weight: bold;
   font-size: 20px;
+}
+
+.btn-flip {
+  opacity: 1;
+  outline: 0;
+  color: #fff;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.btn-flip:last-child {
+  margin-right: 0;
+}
+
+.btn-flip:hover {
+  &:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+  }
+
+  &:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+  }
+}
+
+.btn-flip:after {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  color: #323237;
+  display: block;
+  transition: 0.5s;
+  position: absolute;
+  background: #adadaf;
+  content: attr(data-back);
+  transform: translateY(-50%) rotateX(90deg);
+}
+
+.btn-flip:before {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  color: #adadaf;
+  display: block;
+  padding: 0 30px;
+  line-height: 40px;
+  transition: 0.5s;
+  position: relative;
+  background: #3939fd00;
+  content: attr(data-front);
+  transform: translateY(0) rotateX(0);
 }
 
 button {
@@ -90,6 +155,77 @@ button {
   align-items: center;
   justify-content: center;
   color: white;
-  font-size:25px;
+  font-size: 25px;
   margin: 0px 0px 0px 0px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+form {
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+  margin-right: 10px;
+  
+}
+
+input {
+  color: #fff;
+  font-size: 28px;
+  width: 200px;
+  height: 10px;
+  padding: 20px 5px 5px;
+  background-color: #4f4f4f;
+  border: none;
+  border-radius: 4px;
+  
+}
+
+input::placeholder {
+  font-size: 16px;
+  transform: translateY(-60%);
+}
+
+label {
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 210px;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+span {
+  position: absolute;
+  bottom: 5px;
+  right: 90px;
+  transform: translateX(-5%);
+  transform: translateY(-20%);
+  font-size: 18px;
+  transition: all 0.3s ease;
+  
+}
+
+.btn-flip {
+  opacity: 1;
+  outline: 0;
+  color: #fff;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+  
+}
+
+.btn-flip:last-child {
+  margin-right: 0;
 }

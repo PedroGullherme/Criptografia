@@ -78,44 +78,14 @@ function App() {
     setResult('');
   };
 
-  const handleInputChange = (e) => {
-    setValue(e.target.value);
-  };
-
-  const handleKeyPress = (e) => {
-    if (e.key === 'Enter') {
-      handleButtonClick();
-    }
-  };
-
   return (
     <div className="body">
       <Card>
-        <Title text="CRIPTOGRAFIA" />
-        <Title2 text="Data Encryption Standard (DES)" />
+        <Title text="CRIPTOGRAFIA"></Title>
+        <Title2 text="Data Encryption Standard (DES)"></Title2>
         <Text text="Digite aqui as palavras:" />
-        <div className="input-container">
-          <form>
-            <input
-              type="text"
-              name="name"
-              autoComplete="off"
-              placeholder="Digite aqui"
-              required
-              value={value}
-              onChange={handleInputChange}
-              onKeyPress={handleKeyPress}
-            />
-            <label htmlFor="Digite">
-            </label>
-          </form>
-          <div>
-          <div>
-            <button className="btn-flip" type="submit" data-back="Ok" data-front="Click-me" onClick={handleButtonClick}></button>
-            <button className="btn-flip" data-back="Limpo" data-front="Limpar" onClick={handleClearClick}></button>
-          </div>
-          </div>
-        </div>
+        <Input value={value} onChange={(e) => setValue(e.target.value)} onEnterPress={handleButtonClick} />
+        
         <div id="Result" name="Result">Resultados:</div>
         <Result result={result} />
       </Card>
